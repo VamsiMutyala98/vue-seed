@@ -19,7 +19,7 @@ export default defineComponent({
       required: true,
     },
     order: {
-      type: String as PropType<IOrderTerm>
+      type: String as PropType<IOrderTerm>,
       required: true,
     },
   },
