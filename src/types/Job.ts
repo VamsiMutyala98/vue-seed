@@ -6,4 +6,4 @@ export interface IJob {
   description: string;
 }
 
-export type IOrderTerm = 'title' | 'description' | 'salaray'
+export type IOrderTerm = 'title' | 'description' | 'salaray';
