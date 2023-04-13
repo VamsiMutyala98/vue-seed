@@ -1,4 +1,9 @@
-import { ActionTree, createStore, GetterTree, MutationTree } from 'vuex';
+import {
+  ActionTree,
+  createStore,
+  GetterTree,
+  MutationTree,
+} from 'vuex';
 import { IState } from './type';
 
 export const state: IState = {
