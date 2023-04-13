@@ -8,7 +8,7 @@
   </div>
 </template>
 <script lang="ts">
-import { IJob, IOrderTerm } from '@/types/Job';
+import { IJob, IOrderTerm } from '@/types/Job/';
 import { defineComponent, PropType, computed } from 'vue';
 
 export default defineComponent({
