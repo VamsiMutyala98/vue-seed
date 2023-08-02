@@ -1,9 +1,4 @@
-import {
-  ActionTree,
-  createStore,
-  GetterTree,
-  MutationTree,
-} from 'vuex';
+import { ActionTree, createStore, GetterTree, MutationTree } from 'vuex';
 import { IState } from './type';
 
 export const state: IState = {
@@ -25,11 +20,9 @@ const actions: ActionTree<IState, IState> = {
 
 const mutations: MutationTree<IState> = {
   increment(stateVar: IState) {
-    console.log(stateVar);
     stateVar.count += 1;
   },
   decrement(stateVar: IState) {
-    console.log(stateVar);
     stateVar.count -= 1;
   },
 };

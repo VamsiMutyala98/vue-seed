@@ -1,0 +1,36 @@
+@mixin buttonStyles($background, $hover, $color, $disabled-background, $disabled-color, $padding, $border-radius, $fontSize, $border) {
+  background: $background;
+  color: $color;
+  border: $border;
+  padding: $padding !important;
+  border-radius: $border-radius;
+  font-size: $fontSize !important;
+
+  &:hover,
+  &.hover {
+    color: $color;
+    background: $hover;
+  }
+
+  &:active,
+  &.active {
+    background: $background;
+  }
+
+  &:focus,
+  &.focus {
+    background: $background;
+    color: $color;
+  }
+
+  &:not(:disabled):not(.disabled):active:focus {
+    background: $background;
+    color: $color;
+  }
+
+  &:disabled,
+  &.disabled {
+    background: $disabled-background;
+    color: $disabled-color;
+  }
+}
