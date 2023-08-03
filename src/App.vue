@@ -1,6 +1,6 @@
 <template>
   <header-vue />
-  <router-view />
+  <router-view style="margin-top: 70px" />
   <footer-vue />
 </template>
 <script lang="ts">

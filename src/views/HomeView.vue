@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <nav>
+      <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
+      <router-link to="/jobs">Jobs</router-link>
+    </nav>
     <h1>This is Home Page</h1>
   </div>
 </template>
@@ -11,21 +15,13 @@ export default defineComponent({
   name: 'Home-Component',
 });
 </script>
-
-<style lang="sass" scoped>
+<style lang="sass">
 .home
-  .title
-    color: red
-    &:hover
-      color: green
-      cursor: pointer
-      text-decoration: underline
-  .sort-select-tag
-    border: 2px solid black
-    padding: 5px
-    width: 200px
-    display: flex
-    margin-left: 10px
-  .release-date
-    color: blue
+  nav
+    padding: 30px
+    a
+      font-weight: bold
+      color: #2c3e50
+      &.router-link-exact-active
+        color: #42b983
 </style>

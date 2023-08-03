@@ -20,11 +20,11 @@ export default defineComponent({
     const updateCount = (type: string) => {
       switch (type) {
         case 'increment': {
-          store.dispatch('increment');
+          store.dispatch('INCREMENT_COUNT');
           break;
         }
         case 'decrement': {
-          store.dispatch('decrement');
+          store.dispatch('DECREMENT_COUNT');
           break;
         }
         default: {
