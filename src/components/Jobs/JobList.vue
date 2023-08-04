@@ -8,7 +8,7 @@
   </div>
 </template>
 <script lang="ts">
-import { IJob, IOrderTerm } from '@/types/Job';
+import { IJob, IOrderTerm } from '@/types/job.type';
 import { defineComponent, PropType, computed } from 'vue';
 
 export default defineComponent({
@@ -24,28 +24,14 @@ export default defineComponent({
     },
   },
   setup(props) {
-    // eslint-disable-next-line max-len
-    const orderedJobs = computed(() => [...props.jobs].sort((a: IJob, b: IJob) => (a[props.order] > b[props.order] ? 1 : -1)));
-
+    const orderedJobs = computed(() => {
+      return [...props.jobs].sort((a: IJob, b: IJob) => {
+        return a[props.order] > b[props.order] ? 1 : -1;
+      });
+    });
     return {
       orderedJobs,
     };
   },
 });
 </script>
-<style lang="sass" scoped>
-.job-list
-  text-align: left
-  .job-list-main
-    border: 3px solid #0F3575
-    margin: 10px
-    margin-bottom: 20px
-    padding: 10px
-
-    h2
-      color: #439ED9
-    h4
-      color: #81ba56
-    p
-      font-weight: 600
-</style>

@@ -7,7 +7,7 @@
   "insert_final_newline": true,
   "max_line_length": 100,
   "singleQuote": true,
-  "printWidth": 140,
+  "printWidth": 120,
   "bracketSpacing": true,
   "trailingComma": "es5"
 }

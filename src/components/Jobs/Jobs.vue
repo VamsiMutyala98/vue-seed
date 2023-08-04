@@ -1,14 +1,16 @@
 <template>
   <div class="jobs--container">
     <select aria-label="sort-option" v-model="sortValue" class="sort-select-tag">
-      <option v-for="(item, index) in sortValues" :key="index" :value="item">{{ item }}</option>
+      <option v-for="(item, index) in sortValues" :key="index" :value="item">
+        {{ item }}
+      </option>
     </select>
     <job-list :jobs="jobs" :order="sortValue" />
   </div>
 </template>
-
+@/types/job.type
 <script lang="ts">
-import { IJob, IOrderTerm } from '@/types/Job';
+import { IJob, IOrderTerm } from '@/types/job.type';
 import { defineComponent, ref } from 'vue';
 import JobList from '@/components/Jobs/JobList.vue';
 import jobsList from '@/utils/helper';

@@ -13,6 +13,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'import/no-extraneous-dependencies': 'off',
     'vuejs-accessibility/click-events-have-key-events': 'off',
+    'class-methods-use-this': 'off',
   },
   overrides: [
     {

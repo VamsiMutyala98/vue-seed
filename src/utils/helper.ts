@@ -1,4 +1,4 @@
-import { IJob } from '@/types/Job';
+import { IJob } from '@/types/job.type';
 
 const jobsList: IJob[] = [
   {
